@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import url("http:////maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css") ;
+/* CSS Document */
+
+
+
+.flexslider {
+    background: none repeat scroll 0 0 #303030;
+    border: 6px solid #303030;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 10px;
+    position: relative;
+}
+
+.flex-direction-nav a:before {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-size: 40px;
+    margin-left: 5px;
+}
+
+.flex-direction-nav a.flex-next:before {
+    content: "";
+}
+
+.flex-direction-nav a:before {
+    content: "";
+    display: inline-block;
+}
+
+.flex-direction-nav .flex-prev {
+    left: -23px;
+    text-shadow: -2px 0 0 #fff, -4px 0 2px #bcbcbc;
+    opacity: 1;
+}
+.flex-direction-nav .flex-next {
+    right: -19px;
+    text-shadow: 2px 0 0 #fff, 4px 0 2px #bcbcbc;
+    opacity: 1;
+}
+
+.flexslider:hover .flex-prev { opacity: 1; left: -23px; }
+.flexslider:hover .flex-next { opacity: 1; right: -19px; }
+
+.flex-direction-nav a {
+    color: #303030;
+    cursor: pointer;
+    display: block;
+    height: 40px;
+    margin: -20px 0 0;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    text-decoration: none;
+    top: 50%;
+    transition: all 0.3s ease 0s;
+    width: 40px;
+    z-index: 10;
+}

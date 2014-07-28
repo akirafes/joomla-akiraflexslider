@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0" type="module" client="site" method="upgrade">
+  <name>Slider Solaris</name>
+  <author>Fernando Espinosa S.</author>
+  <authorEmail>akira_fes@hotmail.com</authorEmail>
+  <authorUrl>clubsolaris.com</authorUrl>
+  <creationDate>July 2014</creationDate>
+  <copyright>Copyright Notice</copyright>
+  <license>Module License Agreement</license>
+  <version>0.0.1</version>
+  <description>Flickr Gallery</description>
+  <files>
+    <filename module="mod_akiraslider_joomla">mod_akiraslider_joomla.php</filename>
+    <filename module="mod_akiraslider_joomla">mod_akiraslider_joomla.xml</filename>
+    <filename module="mod_akiraslider_joomla">sample.xml</filename>
+    <filename module="mod_akiraslider_joomla">index.html</filename>
+    <folder>tmpl</folder>
+    <folder>css</folder>
+    <folder>vendors</folder>
+  </files>
+  <config>
+    <fields name="params">
+      <fieldset name="Config" label="Configuration">
+          <field name="idContent" type="text" default=""  label="Container ID" description="ID of the slider Container" />
+
+          <field type="list" name="animation" default="slide" label="Select Slide Animation:" description="Select one">
+              <option value="slide">Slide</option>
+              <option value="fade">Fade</option>
+          </field>
+          <field type="list" name="controlNav" default="false" label="Show Control Navigation:" description="Select one">
+              <option value="false">False</option>
+              <option value="true">True</option>
+          </field>
+          <field type="list" name="slideshow" default="true" label="Animate Slider:" description="Select one">
+              <option value="false">False</option>
+              <option value="true">True</option>
+          </field>
+          <field type="list" name="animationLoop" default="false" label="Animation Loop:" description="Select one">
+              <option value="false">False</option>
+              <option value="true">True</option>
+          </field>
+
+          <field name="itemWidth" type="text" default="0"  label="Width of individual carousel items:" description="Integer: Box-model width of individual carousel items, including horizontal borders and padding." />
+          <field name="itemMargin" type="text" default="0"  label="Margin between carousel items:" description="Integer: Box-model width of individual carousel items, including horizontal borders and padding." />
+          <field type="list" name="minItems" default="0" label="Minimum number of carousel items that should be visible:" description="Minimum number of carousel items that should be visible. Items will resize fluidly when below this.">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+          </field>
+          <field type="list" name="maxItems" default="0" label="Maxmimum number of carousel items that should be visible:" description="Integer: Maxmimum number of carousel items that should be visible. Items will resize fluidly when above this limit.">
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+          </field>
+
+
+          <field name="asNavFor" type="text" default=""  label="Slider Navigation of:" description="Select Master Slider ID" />
+          <field name="sync" type="text" default=""  label="Slider Master of:" description="Select Slider Navegator ID" />
+          <field name="xmlConfig" type="textarea" rows="30" cols="250" filter="raw"  label="XML String Data" description="XML for Slide see sample.xml in module directory"  />
+      </fieldset>
+    </fields>
+  </config>
+</extension>
